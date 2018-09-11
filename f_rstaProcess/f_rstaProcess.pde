@@ -13,46 +13,23 @@ void draw()
   strokeWeight(5.5);
   background(80, 80, 160);
   stroke(255);
-  /*
-  int y=50;
-  for(int i=0; i<250; i++)
-  {
-    y++;
-    line(i, y, i, y);
-    if(y==250)
-    {
-      y=0;
-    }
-  }
-  */
-
- xPos=xPos+xDir;
+  noFill();
+  
   //J
   line(100+xPos, 115+yPos, 99+xPos, 283+yPos);
   line(24+xPos, 115+yPos, 100+xPos, 115+yPos);
   curve(154+xPos, -215+yPos, 24+xPos, 259+yPos, 99+xPos, 284+yPos, 34+xPos, -51+yPos);
-  noFill();
-  if (xPos>width-100 || xPos<-20)
-  {
-    xDir=xDir*-1;
-  }
-  yPos=yPos+yDir;
-  if (yPos>height-330 || yPos<-110)
-  {
-    yDir=yDir*-1;
-  }
   
+ 
   
-  /* //J
+  /* //Original letter J
   line(100, 115, 99, 283);
   line(24, 115, 100, 115);
   curve(154, -215, 24, 259, 99, bottomLine, 34, -51);
-  noFill();
-  
   */
+  
   //o
   ellipse(160, 284, 70, 70);
-  
   //n
   line(220, 320, 220, 255);
   curve(407, 171, 272, 319, 221, 264, -140, 486);
@@ -79,4 +56,15 @@ void draw()
   
   //hoppas jag jonathan
   
+  
+   xPos=xPos+xDir;
+  if (xPos>width-100 || xPos<-20)
+  {
+    xDir=xDir*-1;
+  }
+  yPos=yPos+yDir;
+  if (yPos>height-330 || yPos<-110)
+  {
+    yDir=yDir*-1;
+  }
 }
