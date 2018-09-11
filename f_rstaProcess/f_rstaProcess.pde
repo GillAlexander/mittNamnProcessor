@@ -20,7 +20,7 @@ void draw()
   line(24+xPos, 115+yPos, 100+xPos, 115+yPos);
   curve(154+xPos, -215+yPos, 24+xPos, 259+yPos, 99+xPos, 284+yPos, 34+xPos, -51+yPos);
   
- 
+ //add
   
   /* //Original letter J
   line(100, 115, 99, 283);
