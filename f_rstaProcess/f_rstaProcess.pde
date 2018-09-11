@@ -1,20 +1,50 @@
 void setup()
 {
   size(768 , 432);
+  frameRate(100);
   
 }
+ int yPos=0;
+int xPos =0;
 int bottomLine = 284;
+int x = 1;
+int stroke = 1;
+
 void draw()
 {
+  strokeWeight(5.5);
   background(80, 80, 160);
   stroke(255);
-  strokeWeight(5.5);
+  /*
+  int y=50;
+  for(int i=0; i<250; i++)
+  {
+    y++;
+    line(i, y, i, y);
+    if(y==250)
+    {
+      y=0;
+    }
+  }
+  */
+
+ xPos++;
+ yPos++;
   //J
+  line(100+xPos, 115+yPos, 99+xPos, 283+yPos);
+  line(24+xPos, 115+yPos, 100+xPos, 115+yPos);
+  curve(154+xPos, -215+yPos, 24+xPos, 259+yPos, 99+xPos, bottomLine+yPos, 34+xPos, -51+yPos);
+  noFill();
+  
+  
+  
+  /* //J
   line(100, 115, 99, 283);
   line(24, 115, 100, 115);
   curve(154, -215, 24, 259, 99, bottomLine, 34, -51);
   noFill();
   
+  */
   //o
   ellipse(160, bottomLine, 70, 70);
   
