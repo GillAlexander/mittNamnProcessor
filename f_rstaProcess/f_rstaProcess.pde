@@ -8,6 +8,7 @@ int yPos=0;
 int xPos =0;
 int xDir =2;
 int yDir =2;
+
 void draw()
 {
   strokeWeight(5.5);
@@ -54,7 +55,6 @@ void draw()
   line(620, 330, 620, 255);
   curve(772, 154, 673, 328, 620, 267, 257, 492);
   
-  //hoppas jag jonathan
   
   
    xPos=xPos+xDir;
